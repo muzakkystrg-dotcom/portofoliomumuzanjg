@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir PPDB</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="icon" type="image/png" href="images/icon-smk.png">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Formulir Pendaftaran Peserta Didik Baru (PPDB)</h1> <a href="https://new.smktelkom-sda.sch.id/"> <img
+          src="images/smk_telkom-removebg-preview.png" class="logo_telkom"> </a>
+    </header>
+
+    <body>
+      <form> <audio autoplay>
+          <source src="audio/morning_mood.mp3" type="audio/mp3">
+        </audio> <br>
+        <div class="nama"> <label for="nama">Nama :</label> <input type="text" placeholder="- Nama Lengkap -" required>
+        </div> <br>
+        <div class="tanggal"> <label for="tanggal lahir">Tanggal Lahir :</label> <input type="date"
+            placeholder="- dd-mm-yy -" required> </div> <br>
+        <div class="NIK"> <label for="NIK">NIK :</label> <input type="number" placeholder="- 1234567 -" required> </div>
+        <br>
+        <div class="agama"> <label for="agama">Agama :</label> <select id="agama" name="agama" required>
+            <option value="">- Pilih Agama -</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select> </div> <br>
+        <div class="kelamin"> <label for="radio">Jenis Kelamin :</label> <input type="radio" value="laki laki"
+            name="gender" id="laki" required> <label for="radio">Laki-Laki</label> <input type="radio" value="perempuan"
+            name="gender" id="perempuan"> <label for="radio">Perempuan</label> </div> <br>
+        <div class="sekolah"> <label for="sekolah">Asal Sekolah :</label> <select id="sekolah" name="sekolah" required>
+            <option value="">- Pilih Asal Sekolah -</option>
+            <option value="SMPN 1 SIDOARJO">SMPN 1 SIDOARJO</option>
+            <option value="SMPN 2 SIDOARJO">SMPN 2 SIDOARJO</option>
+            <option value="SMPN 3 SIDOARJO">SMPN 3 SIDOARJO</option>
+            <option value="SMPN 4 SIDOARJO">SMPN 4 SIDOARJO</option>
+            <option value="SMPN 5 SIDOARJO">SMPN 5 SIDOARJO</option>
+            <option value="SMPN 1 CANDI">SMPN 1 CANDI</option>
+            <option value="SMPN 2 CANDI">SMPN 2 CANDI</option>
+            <option value="SMPN 1 TAMAN">SMPN 1 TAMAN</option>
+            <option value="SMPN 2 TAMAN">SMPN 2 TAMAN</option>
+            <option value="SMPN 1 KRIAN">SMPN 1 KRIAN</option>
+            <option value="SMPN 2 KRIAN">SMPN 2 KRIAN</option>
+            <option value="SMPN 1 WARU">SMPN 1 WARU</option>
+            <option value="SMPN 2 WARU">SMPN 2 WARU</option>
+            <option value="SMPN 3 WARU">SMPN 3 WARU</option>
+            <option value="SMPN 4 WARU">SMPN 4 WARU</option>
+            <option value="SMPN 1 JABON">SMPN 1 JABON</option>
+            <option value="SMPN 1 SEDATI">SMPN 1 SEDATI</option>
+            <option value="SMPN 2 SEDATI">SMPN 2 SEDATI</option>
+            <option value="SMPN 1 BALONGBENDO">SMPN 1 BALONGBENDO</option>
+            <option value="SMPN 1 PORONG">SMPN 1 PORONG</option>
+            <option value="SMPN 2 PORONG">SMPN 2 PORONG</option>
+          </select> </div> <br>
+        <div class="provinsi"> <label for="provinsi">Pilih Provinsi:</label> <select id="provinsi" name="provinsi"
+            required>
+            <option value="">- Pilih Provinsi -</option>
+            <option value="aceh">Aceh</option>
+            <option value="sumut">Sumatera Utara</option>
+            <option value="sumbar">Sumatera Barat</option>
+            <option value="riau">Riau</option>
+            <option value="kepri">Kepulauan Riau</option>
+            <option value="jambi">Jambi</option>
+            <option value="sumsel">Sumatera Selatan</option>
+            <option value="babel">Kepulauan Bangka Belitung</option>
+            <option value="bengkulu">Bengkulu</option>
+            <option value="lampung">Lampung</option>
+            <option value="banten">Banten</option>
+            <option value="jakarta">DKI Jakarta</option>
+            <option value="jabar">Jawa Barat</option>
+            <option value="jateng">Jawa Tengah</option>
+            <option value="yogyakarta">DI Yogyakarta</option>
+            <option value="jatim">Jawa Timur</option>
+            <option value="bali">Bali</option>
+            <option value="ntb">Nusa Tenggara Barat</option>
+            <option value="ntt">Nusa Tenggara Timur</option>
+            <option value="kalbar">Kalimantan Barat</option>
+            <option value="kalteng">Kalimantan Tengah</option>
+            <option value="kalsel">Kalimantan Selatan</option>
+            <option value="kaltim">Kalimantan Timur</option>
+            <option value="kalut">Kalimantan Utara</option>
+            <option value="sulut">Sulawesi Utara</option>
+            <option value="sulteng">Sulawesi Tengah</option>
+            <option value="sulsel">Sulawesi Selatan</option>
+            <option value="sultra">Sulawesi Tenggara</option>
+            <option value="gorontalo">Gorontalo</option>
+            <option value="sulbar">Sulawesi Barat</option>
+            <option value="maluku">Maluku</option>
+            <option value="malut">Maluku Utara</option>
+            <option value="papua">Papua</option>
+            <option value="pabar">Papua Barat</option>
+          </select> </div> <br>
+        <div class="alamat"> <label for="alamat">Alamat :</label> <input type="text"
+            placeholder="- Alamat Tempat Tinggal -" required> </div> <br>
+        <div class="tabel"> <label for="sertifikat">Sertifikat Kejuaraan :</label>
+          <br>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Lomba</th>
+                <th>Tingkat</th>
+                <th>Penyelenggara</th>
+                <th>Juara</th>
+                <th>Bukti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tr1">
+                <td>1.</td>
+                <td><input type="text" placeholder="- Nama Lomba -" class="input"></td>
+                <td><input type="text" placeholder="- Tingkat -" class="input"></td>
+                <td><input type="text" placeholder="- Penyelenggara -" class="input"></td>
+                <td><input type="text" placeholder="- Juara -" class="input"></td>
+                <td><input type="file" placeholder="- Bukti -" class="input"></td>
+              </tr>
+              <tr class="tr2">
+                <td>2.</td>
+                <td><input type="text" placeholder="- Nama Lomba -" class="input1"></td>
+                <td><input type="text" placeholder="- Tingkat -" class="input1"></td>
+                <td><input type="text" placeholder="- Penyelenggara -" class="input1"></td>
+                <td><input type="text" placeholder="- Juara -" class="input1"></td>
+                <td><input type="file" placeholder="- Bukti -" class="input1"></td>
+              </tr>
+              <tr class="tr3">
+                <td>3.</td>
+                <td><input type="text" placeholder="- Nama Lomba -" class="input"></td>
+                <td><input type="text" placeholder="- Tingkat -" class="input"></td>
+                <td><input type="text" placeholder="- Penyelenggara -" class="input"></td>
+                <td><input type="text" placeholder="- Juara -" class="input"></td>
+                <td><input type="file" placeholder="- Bukti -" class="input"></td>
+              </tr>
+              <tr class="tr4">
+                <td>4.</td>
+                <td><input type="text" placeholder="- Nama Lomba -" class="input1"></td>
+                <td><input type="text" placeholder="- Tingkat -" class="input1"></td>
+                <td><input type="text" placeholder="- Penyelenggara -" class="input1"></td>
+                <td><input type="text" placeholder="- Juara -" class="input1"></td>
+                <td><input type="file" placeholder="- Bukti -" class="input1"></td>
+              </tr>
+              <tr class="tr5">
+                <td>5.</td>
+                <td><input type="text" placeholder="- Nama Lomba -" class="input"></td>
+                <td><input type="text" placeholder="- Tingkat -" class="input"></td>
+                <td><input type="text" placeholder="- Penyelenggara -" class="input"></td>
+                <td><input type="text" placeholder="- Juara -" class="input"></td>
+                <td><input type="file" placeholder="- Bukti -" class="input"></td>
+              </tr>
+              <tr class="tr6">
+                <td colspan="5">Total Sertifikat Lomba</td>
+                <td><input type="number" placeholder="- Jumlah Total -" class="input1"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <br>
+        <div class="submit"> <input type="submit" value="Kirim"><br> <input type="reset" value="Reset"> </div>
+      </form>
+    </body>
+    <footer>
+      <div class="pfoot">
+        <p> &copy; Copyright 2025, All Rights Reserved </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

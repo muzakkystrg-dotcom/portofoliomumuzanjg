@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/bg-white.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(45deg, #e90f0f, #7a0404);
+    color: white;
+    padding: 20px 24px;
+    display: flex;
+}
+
+.logo_telkom {
+    height: 80px;
+    display: flex;
+    margin-left: 220px;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.logo_telkom:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(11, 18, 33, 0.08);
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #eb2525;
+    outline: none;
+    box-shadow: 0 0 6px rgba(235, 37, 37, 0.4);
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+.kelamin label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+table {
+    text-align: center;
+    width: 100px;
+    border: none    ;
+    background-color: #c7c6c6;
+    margin: auto;
+}
+
+th {
+    background-color: #fa0c0c;
+    color: white;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.tr2,
+.tr4,
+.tr6 {
+    background-color: #e7e7e7;
+}
+
+.tr1,
+.tr3,
+.tr5 {
+    background-color: #ffffff;
+}
+
+.input {
+    width: 100px;
+    margin: auto;
+}
+
+.input1 {
+    width: 100px;
+    margin: auto;
+    background-color: #e7e7e7;
+}
+
+input[type="submit"] {
+    background: #e90f0f;
+    color: white;
+}
+
+input[type="reset"] {
+    background: #e5e7eb;
+    color: #333;
+}
+
+input[type="submit"]:hover {
+    background: #bd0808;
+    transform: translateY(-2px);
+}
+
+input[type="reset"]:hover {
+    background: #c7c7c7;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: linear-gradient(45deg, #e90f0f, #7a0404);
+    color: white;
+    padding: 20px 24px;
+    text-align: center;
+}
