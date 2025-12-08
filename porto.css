@@ -83,7 +83,7 @@ section#about {
     /* DESKTOP GRID */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 25px;
     text-align: left;
 }
 
@@ -139,16 +139,16 @@ h2 {
     color: #0077cc;
 }
 
-article {
+#projects article,
+#certificates article,
+#experience article {
     background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
     border-radius: 10px;
     border: 1px solid #eaeaea;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-    text-align: left;
+    padding: 20px;
+    margin: 0;      
 }
-
 footer {
     display: flex;
     justify-content: space-between;
