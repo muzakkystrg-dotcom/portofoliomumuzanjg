@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif');
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -77,6 +80,7 @@ section#about {
 #projects,
 #certificates,
 #experience {
+    /* DESKTOP GRID */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -175,27 +179,28 @@ footer a:hover {
 
 }
 
-/* Dalam file style.css */
-
+/* ======================================= */
+/* RESPONSIVE DESIGN (Perbaikan untuk HP) */
+/* ======================================= */
 @media (max-width: 768px) {
-    /* Perbaikan: Mengatur ulang tampilan grid pada proyek */
+    
+    /* Mengatur ulang tampilan grid pada proyek */
     #projects,
     #certificates,
     #experience {
         /* Memastikan hanya 1 kolom saat layar kecil */
         grid-template-columns: 1fr;
         gap: 20px;
-        /* Tambahkan padding horizontal agar konten tidak terlalu menempel di pinggir */
         padding: 0 15px; 
     }
     
-    /* Mengatasi box project yang menempel di kanan */
+    /* Perbaikan Konsistensi Kotak Proyek: Menggunakan persentase lebar dan menengahkan */
     #projects article,
     #certificates article,
     #experience article {
-        /* Setel lebar maksimum agar terlihat rapi dan gunakan margin auto untuk menengahkan */
-        max-width: 400px; 
-        margin: 20px auto; 
+        width: 90%; /* Mengisi 90% lebar layar */
+        margin: 20px auto; /* Menengahkan kotak */
+        padding: 15px; /* Sesuaikan padding */
     }
 
     .about-container {
@@ -219,10 +224,11 @@ footer a:hover {
         padding: 15px;
     }
     
-    /* Tambahkan perbaikan untuk footer agar lebih rapi di HP */
+    /* Perbaikan Footer agar rapi di HP */
     footer {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
     
     .footer-left {
