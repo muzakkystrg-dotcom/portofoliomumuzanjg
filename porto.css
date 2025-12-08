@@ -175,7 +175,29 @@ footer a:hover {
 
 }
 
+/* Dalam file style.css */
+
 @media (max-width: 768px) {
+    /* Perbaikan: Mengatur ulang tampilan grid pada proyek */
+    #projects,
+    #certificates,
+    #experience {
+        /* Memastikan hanya 1 kolom saat layar kecil */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        /* Tambahkan padding horizontal agar konten tidak terlalu menempel di pinggir */
+        padding: 0 15px; 
+    }
+    
+    /* Mengatasi box project yang menempel di kanan */
+    #projects article,
+    #certificates article,
+    #experience article {
+        /* Setel lebar maksimum agar terlihat rapi dan gunakan margin auto untuk menengahkan */
+        max-width: 400px; 
+        margin: 20px auto; 
+    }
+
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -195,5 +217,19 @@ footer a:hover {
     section {
         margin: 20px auto;
         padding: 15px;
+    }
+    
+    /* Tambahkan perbaikan untuk footer agar lebih rapi di HP */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-left {
+        margin-bottom: 10px;
+    }
+    
+    .footer-right p {
+        text-align: center;
     }
 }
