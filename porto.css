@@ -1,206 +1,24 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Segoe+UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif');
+/* Dalam file style.css */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdfdfd;
-    color: #333;
-    line-height: 1.6;
-}
-
-h1 {
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(to right, #ffffff, #f4f4f4);
-    border-bottom: 1px solid #e5e5e5;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #222;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-a {
-    text-decoration: none;
-    color: #0077cc;
-    font-weight: 500;
-}
-
-a:hover {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-}
-
-nav {
-    text-align: center;
-    padding: 15px;
-    background-color: #fafafa;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    padding-bottom: 4px;
-}
-
-nav a:hover {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-}
-
-section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-section#about {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-#projects,
-#certificates,
-#experience {
-    /* DESKTOP GRID */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    text-align: left;
-}
-
-#projects>h2,
-#certificates>h2,
-#experience>h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-#projects article,
-#certificates article,
-#experience article {
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#projects article:hover,
-#certificates article:hover,
-#experience article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    text-align: left;
-}
-
-.about-container img {
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-container p {
-    max-width: 500px;
-}
-
-
-h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #0077cc;
-}
-
-article {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-    text-align: left;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #fafafa;
-    color: #555;
-    border-top: 1px solid #e5e5e5;
-}
-
-footer a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.footer-left {
-    font-size: 14px;
-}
-
-.footer-right p {
-    margin: 3px 0;
-    font-size: 14px;
-    text-align: right;
-
-}
-
-/* ======================================= */
-/* RESPONSIVE DESIGN (Perbaikan untuk HP) */
-/* ======================================= */
 @media (max-width: 768px) {
-    
-    /* Mengatur ulang tampilan grid pada proyek */
+    /* Perbaikan: Mengatur ulang tampilan grid pada proyek */
     #projects,
     #certificates,
     #experience {
         /* Memastikan hanya 1 kolom saat layar kecil */
         grid-template-columns: 1fr;
         gap: 20px;
+        /* Tambahkan padding horizontal agar konten tidak terlalu menempel di pinggir */
         padding: 0 15px; 
     }
     
-    /* Perbaikan Konsistensi Kotak Proyek: Menggunakan persentase lebar dan menengahkan */
+    /* Mengatasi box project yang menempel di kanan */
     #projects article,
     #certificates article,
     #experience article {
-        width: 90%; /* Mengisi 90% lebar layar */
-        margin: 20px auto; /* Menengahkan kotak */
-        padding: 15px; /* Sesuaikan padding */
+        /* Setel lebar maksimum agar terlihat rapi dan gunakan margin auto untuk menengahkan */
+        max-width: 400px; 
+        margin: 20px auto; 
     }
 
     .about-container {
@@ -224,11 +42,10 @@ footer a:hover {
         padding: 15px;
     }
     
-    /* Perbaikan Footer agar rapi di HP */
+    /* Tambahkan perbaikan untuk footer agar lebih rapi di HP */
     footer {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
     }
     
     .footer-left {
